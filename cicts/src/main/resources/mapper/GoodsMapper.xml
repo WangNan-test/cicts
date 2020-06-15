@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+    
+<!-- 
+	mapper,xml中编写sql语句
+	namespace="命名空间 一般使用文件所在包和文件名 命名"
+		此名称在一个项目中必须是唯一的
+ -->
+ <!-- 使用接口访问，namesprce 接口的全类名 -->
+<mapper namespace="com.tyinf.cicts.dao.IGoodsDAO">
+	<resultMap id="goodsInfo" type="Goods">
+		<id column="gid" property="gid"/>
+		<result column="gname" property="gname"/>
+		<result column="desc" property="desc"/>
+		<result column="price" property="price"/>
+		<result column="putday" property="putday"/>
+		<result column="gimg" property="gimg"/>
+		<association property="type" javaType="Type">
+			<id column="tid" property="tid"/>
+			<result column="tname" property="tname"/>
+		</association>
+		<association property="user" javaType="User">
+			<id column="uid" property="uid"/>
+			<id column="uname" property="uname"/>
+		</association>
+	</resultMap>
+	<select id="findAllType" resultType="Type">
+		SELECT * FROM type
+	</select>
+
+	<insert id="add" parameterType="Goods">
+		INSERT INTO goods(gname,`desc`,price,gimg,tid,uid) VALUES(#{gname},#{desc},#{price},#{gimg},#{type.tid},#{user.uid})
+	</insert>
+	<select id="count" resultType="Integer" parameterType="map">
+		SELECT COUNT(*) FROM  goods WHERE uid=#{uid}
+		<if test="column !=null and column!='' and keyword !=null and keyword!='' ">
+			and `${column}` LIKE concat('%',#{keyword},'%')
+		</if>
+	</select>
+	<select id="findSplit" resultMap="goodsInfo" parameterType="map">
+		SELECT g.gid gid,g.gname gname,g.`desc` `desc`,g.price price,g.gimg gimg,g.uid uid,g.tid tid,t.tname tname FROM goods g, type t
+		WHERE
+		uid=#{uid} AND g.tid=t.tid
+		<if test="column !=null and column!='' and keyword !=null and keyword!='' ">
+			AND `${column}` LIKE concat('%',#{keyword},'%')
+			</if>
+		GROUP BY g.gid DESC
+		Limit #{currentPage},#{lineSize}
+	</select>
+	<select id="findByID" parameterType="int" resultMap="goodsInfo">
+		SELECT g.gid gid,g.gname gname,g.`desc` `desc`,g.price price,g.gimg gimg,g.uid uid,g.tid tid,t.tname tname
+		FROM goods g, type t
+		WHERE
+		g.gid=#{gid} AND g.tid=t.tid
+	</select>
+	<update id="edit" parameterType="Goods">
+		UPDATE goods SET gname=#{gname},`desc`=#{desc},price=#{price},putday=#{putday},gimg=#{gimg},tid=#{type.tid} WHERE gid=#{gid}
+	</update>
+	<delete id="delete">
+		DELETE FROM  goods WHERE gid in
+		<foreach collection="array" item="item" open="(" separator="," close=")">
+			#{item}
+		</foreach>
+	</delete>
+</mapper>
+
+

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+    
+<!-- 
+	mapper,xml中编写sql语句
+	namespace="命名空间 一般使用文件所在包和文件名 命名"
+		此名称在一个项目中必须是唯一的
+ -->
+ <!-- 使用接口访问，namesprce 接口的全类名 -->
+<mapper namespace="com.tyinf.cicts.dao.ICartDAO">
+	<insert id="addCart" parameterType="Cart">
+		INSERT INTO cart(gid,uid) values(#{gid},#{uid})
+	</insert>
+	<select id="count" parameterType="int" resultType="int">
+		SELECT COUNT(*) from cart WHERE uid=#{uid}
+	</select>
+	<select id="list" resultType="Goods" parameterType="int">
+		SELECT g.gid gid,g.gname gname,g.`desc` `desc`,g.gimg gimg,g.price price
+		FROM cart c JOIN goods g  ON c.gid=g.gid
+		WHERE c.uid=${uid}
+	</select>
+	<delete id="delete" parameterType="map">
+		DELETE FROM cart where gid=#{gid} AND uid=#{uid}
+	</delete>
+	<delete id="deleteAll" parameterType="int">
+		DELETE FROM cart where  uid=#{uid}
+	</delete>
+	<select id="allprice" resultType="Double">
+		SELECT SUM(g.price)
+		FROM cart c JOIN goods g ON c.gid=g.gid
+		WHERE c.uid=${uid}
+	</select>
+	<select id="flag" parameterType="Cart" resultType="Goods">
+		SELECT g.gid gid,g.gname gname,g.`desc` `desc`,g.gimg gimg,g.price price
+		FROM cart c JOIN goods g  ON c.gid=g.gid
+		WHERE c.uid=${uid} and c.gid=#{gid}
+	</select>
+	<select id="selectGid" parameterType="int" resultType="int">
+		SELECT gid FROM cart WHERE uid=#{uid}
+	</select>
+</mapper>
+
+

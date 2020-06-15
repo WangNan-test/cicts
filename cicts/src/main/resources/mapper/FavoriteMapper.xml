@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+    
+<!-- 
+	mapper,xml中编写sql语句
+	namespace="命名空间 一般使用文件所在包和文件名 命名"
+		此名称在一个项目中必须是唯一的
+ -->
+ <!-- 使用接口访问，namesprce 接口的全类名 -->
+<mapper namespace="com.tyinf.cicts.dao.IFavoriteDAO">
+	<insert id="add" parameterType="Favorite">
+		INSERT INTO favorite(gid,uid) values(#{gid},#{uid})
+	</insert>
+	<select id="flag" resultType="Favorite" parameterType="Favorite">
+		SELECT * FROM favorite where gid=#{gid} AND uid=#{uid}
+	</select>
+	<select id="list" parameterType="int" resultType="Goods">
+		SELECT g.gid gid,g.gname gname,g.`desc` `desc`,g.gimg gimg,g.price price,f.time putday
+		FROM favorite f  JOIN goods g  ON f.gid=g.gid
+		WHERE f.uid=#{uid}
+	</select>
+	<delete id="delete" parameterType="Favorite" >
+		DELETE FROM favorite where  uid=#{uid} AND gid=#{gid}
+	</delete>
+</mapper>
+
+

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+    
+<!-- 
+	mapper,xml中编写sql语句
+	namespace="命名空间 一般使用文件所在包和文件名 命名"
+		此名称在一个项目中必须是唯一的
+ -->
+ <!-- 使用接口访问，namesprce 接口的全类名 -->
+<mapper namespace="com.tyinf.cicts.dao.ICommentDAO">
+	<insert id="add" parameterType="Comment">
+		INSERT INTO comment(uid,gid,content)VALUES(#{uid},#{gid},#{content})
+	</insert>
+	<resultMap id="info" type="Goods">
+		<id column="gid" property="gid"/>
+		<result column="gname" property="gname"/>
+		<result column="desc" property="desc"/>
+		<result column="price" property="price"/>
+		<result column="gimg" property="gimg"/>
+		<result column="opertime" property="opertime"/>
+		<result column="content" property="content"/>
+		<result column="id" property="id"/>
+	</resultMap>
+	<select id="byUid" parameterType="int" resultMap="info">
+		SELECT g.gid gid, g.gname gname,g.`desc` `desc`,g.price price,g.gimg gimg,c.opertime opertime, c.content content,c.id id
+		FROM goods g JOIN `comment` c ON g.gid=c.gid
+		WHERE c.uid=#{uid}
+	</select>
+	<delete id="delete" parameterType="int">
+		DELETE FROM `comment` WHERE id=#{cid}
+	</delete>
+</mapper>
+
+

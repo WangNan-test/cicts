@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+    
+<!-- 
+	mapper,xml中编写sql语句
+	namespace="命名空间 一般使用文件所在包和文件名 命名"
+		此名称在一个项目中必须是唯一的
+ -->
+ <!-- 使用接口访问，namesprce 接口的全类名 -->
+<mapper namespace="com.tyinf.cicts.dao.IUserDAO">
+	<select id="findAllPhone" resultType="String" parameterType="User">
+		SELECT phone FROM user WHERE uid!=#{uid}
+	</select>
+
+	<update id="save" parameterType="User">
+		UPDATE user SET uname=#{uname},realname=#{realname},sex=#{sex},address=#{address},birthday=#{birthday},phone=#{phone} WHERE uid=#{uid}
+	</update>
+	<select id="verify" parameterType="int" resultType="String">
+		SELECT password FROM user WHERE uid=#{uid}
+	</select>
+	<update id="update" parameterType="map">
+		UPDATE user SET password=#{newPassword} WHERE uid=#{uid}
+ 	</update>
+	<select id="findById" parameterType="int" resultType="User">
+		SELECT * FROM user where uid=#{uid}
+	</select>
+	<update id="upload" parameterType="User">
+		UPDATE user SET portrait=#{portrait} WHERE uid=#{uid}
+	</update>
+	<select id="list" resultType="User">
+		SELECT * FROM user where uid!=9
+	</select>
+</mapper>
+
+

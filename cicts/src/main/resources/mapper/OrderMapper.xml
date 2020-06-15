@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+    
+<!-- 
+	mapper,xml中编写sql语句
+	namespace="命名空间 一般使用文件所在包和文件名 命名"
+		此名称在一个项目中必须是唯一的
+ -->
+ <!-- 使用接口访问，namesprce 接口的全类名 -->
+<mapper namespace="com.tyinf.cicts.dao.IOrderDAO">
+	<insert id="add" parameterType="Order" useGeneratedKeys="true" keyColumn="oid" keyProperty="oid">
+		INSERT INTO `order`(uid,total,sum) VALUES(#{uid},#{total},#{sum})
+	</insert>
+	<insert id="addGods" parameterType="map">
+		INSERT INTO order_goods VALUES
+		<foreach collection="gids" item="gid" separator=",">
+			(#{oid},#{gid})
+		</foreach>
+	</insert>
+    <select id="list" parameterType="int" resultType="Order">
+
+        SELECT * FROM `order` WHERE uid=#{uid} AND status!=3
+    </select>
+    <update id="pay" parameterType="int" >
+        UPDATE  `order` SET status=2 WHERE oid=#{oid}
+    </update>
+    <update id="cancel" parameterType="int" >
+        UPDATE  `order` SET status=3 WHERE oid=#{oid}
+    </update>
+    <select id="findByID" parameterType="int" resultType="Order">
+        SELECT * FROM `order` WHERE oid=#{oid}
+    </select>
+    <select id="orderUser" parameterType="int" resultType="User">
+        SELECT u.uid uid,u.uname uname,u.address address,u.phone phone,u.realname realname,u.sex sex,u.birthday birthday
+        FROM `order` o JOIN `user` u  ON o.uid=u.uid
+        WHERE o.oid=#{oid}
+    </select>
+    <select id="orderGoods" resultType="Goods" parameterType="int">
+        SELECT g.gid gid,g.gname gname,g.price price,g.gimg gimg,g.`desc` `desc`
+         FROM order_goods og JOIN goods g ON og.gid=g.gid
+        WHERE og.oid=#{oid}
+    </select>
+    <select id="buyList" resultType="Buy" parameterType="int">
+        SELECT o.oid oid,o.time time,g.gname gname,g.gimg gimg,u.uname uname,u.phone,u.address address,g.price price,g.gid gid
+      FROM `order` o JOIN `order_goods` og JOIN goods g JOIN `user` u ON o.oid=og.oid AND og.gid=g.gid AND o.uid=u.uid
+      WHERE o.`status`=2 AND g.uid=#{uid}
+    </select>
+</mapper>
+
+
