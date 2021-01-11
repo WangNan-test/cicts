@@ -22,7 +22,7 @@ em,i{font-style:normal}
 /*宽度自适应*/
 .nav,.banner,.all-thing,.footer,.friend-href,.ulnav_tab,.right_tabul,.cort,.navbt_bk{width:100%;min-width:980px}
 
-.all-thing{background:#fef3f1;overflow:hidden}
+.all-thing{background:#f1fdfe;overflow:hidden}
 
 /*头部*/
 .headtop{height:92px;font-family:"宋体"}
@@ -46,7 +46,7 @@ em,i{font-style:normal}
 .toser{position:absolute;width:16px;height:16px;background-position:-54px 0px;top:6px;right:10px;cursor:pointer}
 
 /*导航条*/
-.nav{background:#ffdede;height:34px;z-index:361;position:relative;}
+.nav{background:#d9fdfb;height:34px;z-index:361;position:relative;}
 /*导航条左边*/
 .nav-ul li{float:left;height:33px;line-height:34px;padding:0 28px;position:relative;border:1px solid transparent;border-top:none}
 .nav-ul a{font-size:14px;color:#8e4f1b;display:block}

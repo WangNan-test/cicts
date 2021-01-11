@@ -124,6 +124,4 @@ public class loginAction extends AbstractAction {
             return "1";
         }
     }
-
-
 }

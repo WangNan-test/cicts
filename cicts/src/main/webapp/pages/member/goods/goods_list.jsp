@@ -139,40 +139,40 @@
 	<!--新版右边客服start-->
 
 	<!--右边漂浮悬挂大的-->
-	<div class="float_big">
-		<div class="floatbig_hide fr"></div>
-		<div class="floatbig_center">
-			<!--客服-->
-			<div onClick="javascript:NTKF.im_openInPageChat();" id="Bearonline" class="floatbig_center-kf"></div>
-			<!--客服end-->
-			<!--定制咨询-->
-			<div id="dzzxonline" class="floatbig_center-zx">
-				<a href="javascript:showModel(modelsever);"></a>
-			</div>
-			<!--定制咨询end-->
-			<img src="/statics/images/ew.jpg">
-		</div>
-	</div>
+	<%--<div class="float_big">--%>
+		<%--<div class="floatbig_hide fr"></div>--%>
+		<%--<div class="floatbig_center">--%>
+			<%--<!--客服-->--%>
+			<%--<div onClick="javascript:NTKF.im_openInPageChat();" id="Bearonline" class="floatbig_center-kf"></div>--%>
+			<%--<!--客服end-->--%>
+			<%--<!--定制咨询-->--%>
+			<%--<div id="dzzxonline" class="floatbig_center-zx">--%>
+				<%--<a href="javascript:showModel(modelsever);"></a>--%>
+			<%--</div>--%>
+			<%--<!--定制咨询end-->--%>
+			<%--<img src="/statics/images/ew.jpg">--%>
+		<%--</div>--%>
+	<%--</div>--%>
 	<!--右边漂浮悬挂大的end-->
 	<!--右边漂浮悬挂小的-->
-	<div class="float_small">
-		<div class="floatbig_show fr"></div>
-		<div class="floatbig_center">
-			<!--客服-->
-			<div onClick="javascript:NTKF.im_openInPageChat();" class="floatsmall_center-kf fr"></div>
-			<!--客服end-->
-			<!--定制咨询-->
-			<div class="floatsmall_center-zx fr">
-				<a href="javascript:showModel(modelsever);"></a>
-			</div>
-			<!--定制咨询end-->
-			<!--二维码-->
-			<div class="floatsmall_erwei fr">
-				<a href="#"></a>
-			</div>
-			<!--二维码end-->
-		</div>
-	</div>
+	<%--<div class="float_small">--%>
+		<%--<div class="floatbig_show fr"></div>--%>
+		<%--<div class="floatbig_center">--%>
+			<%--<!--客服-->--%>
+			<%--<div onClick="javascript:NTKF.im_openInPageChat();" class="floatsmall_center-kf fr"></div>--%>
+			<%--<!--客服end-->--%>
+			<%--<!--定制咨询-->--%>
+			<%--<div class="floatsmall_center-zx fr">--%>
+				<%--<a href="javascript:showModel(modelsever);"></a>--%>
+			<%--</div>--%>
+			<%--<!--定制咨询end-->--%>
+			<%--<!--二维码-->--%>
+			<%--<div class="floatsmall_erwei fr">--%>
+				<%--<a href="#"></a>--%>
+			<%--</div>--%>
+			<%--<!--二维码end-->--%>
+		<%--</div>--%>
+	<%--</div>--%>
 	<!--右边漂浮悬挂小的end-->
 	<!--返回顶部-->
 	<div class="comeback"></div>

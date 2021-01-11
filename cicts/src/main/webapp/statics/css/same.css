@@ -51,7 +51,7 @@ em,i{font-style:normal}
 .txt2{width:110px;height:14px;border:0;line-height:14px;font-size:12px;color:#666;padding-left:12px;outline:none;position:absolute;top:5px;left:4px}
 .toser2{position:absolute;width:16px;height:16px;background-position:-54px 0px;top:3px;right:10px;cursor:pointer}
 /*导航条*/
-.nav{background:#ffdede;height:34px;z-index:361;position:relative;}
+.nav{background:#d9fdfb;height:34px;z-index:361;position:relative;}
 /*导航条左边*/
 .nav-ul li{float:left;height:33px;line-height:34px;padding:0 28px;position:relative;border:1px solid transparent;border-top:none}
 .nav-ul a{font-size:14px;color:#8e4f1b;display:block}
@@ -156,7 +156,7 @@ em,i{font-style:normal}
 
 
 /*中间内容*/
-.cort{background:#fef3f1;padding-bottom:58px}
+.cort{background:#f1fdfe;padding-bottom:58px}
 /*面包屑*/
 
 .zbk_top{height:40px;line-height:40px;font-size:12px;color:#888;cursor:default;padding-left:20px;clear:both}

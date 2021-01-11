@@ -197,7 +197,7 @@
 
         <div class="tw-foot">
             <div class="auto" id="Copyright">
-                <p>Copyright &copy; 2020 校园闲置商品交易系统. 高新学院计科1604李欢</p>
+                <p>Copyright &copy; 2021 电子商城项目系统. 高新学院计科刘佳利</p>
             </div>
         </div>
     </div>

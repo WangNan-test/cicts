@@ -46,7 +46,7 @@
         <!--头部左边-->
         <div class="top-left fl">
             <a title="Darry Ring" href="pages/index.jsp"> <img width="187" height="42" alt="Darry Ring官网" src="/statics/images/logo-white.png" /> </a>
-            <span style="font-weight: normal;">校园闲置商品交易系统</span>
+            <span style="font-weight: normal;">电子商城项目</span>
         </div>
         <!--头部左边end-->
         <!--头部右边-->

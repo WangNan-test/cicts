@@ -4,7 +4,7 @@
   <jsp:include page="/pages/plugins/include_basepath.jsp"/>
   <meta charset="utf-8" /> 
   <title>会员登录</title> 
-  <meta name="Keywords" content="校园闲置商品交易系统" />
+  <meta name="Keywords" content="电子商城项目" />
   <meta name="Description" content="Darry Ring官网会员注册登录唯一入口，Darry Ring是求婚钻戒第一品牌，想了解Darry Ring实体店、Darry Ring哪里有卖等相关Darry Ring资讯就先进入戴瑞珠宝官网注册吧！" /> 
   <meta content="26403151123072464122121676375" property="qc:admins" /> 
   <link href="/statics/css/style.css" type="text/css" rel="stylesheet" />
@@ -20,7 +20,7 @@
      <!--头部左边--> 
      <div class="topLeft left"> 
       <a href="/pages/index.jsp" title="Darry Ring"> <img width="186" height="42" src="/statics/images/logo-white.png " /> </a>
-      <span>校园闲置商品交易系统</span>
+      <span>电子商城项目</span>
      </div> 
      <!--头部左边end--> 
      <!--头部右边--> 
