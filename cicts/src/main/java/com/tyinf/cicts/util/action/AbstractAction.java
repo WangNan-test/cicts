@@ -1,6 +1,7 @@
 package com.tyinf.cicts.util.action;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.system.ApplicationHome;
 import org.springframework.context.MessageSource;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
@@ -27,11 +28,15 @@ public class AbstractAction {
     private MessageSource messageSource ;
 
     public String getUploadDir() {
-        return "/upload/" ;
+        ApplicationHome h = new ApplicationHome(getClass());
+        File jarF = h.getSource();
+        //在jar包所在目录下生成一个upload文件夹用来存储上传的图片
+        String dirPath = jarF.getParentFile().toString()+"/upload/";
+        return dirPath ;
     }
     public String upload(MultipartFile file) {  // 进行上传的控制
         String fileName = UUID.randomUUID() + "." + file.getContentType().substring(file.getContentType().lastIndexOf("/") + 1) ;
-        String filePath = this.getApplication().getRealPath(this.getUploadDir()) + fileName ;
+        String filePath = this.getUploadDir()+ fileName ;
         OutputStream output = null ;
         try {
             File saveFile = new File(filePath) ;

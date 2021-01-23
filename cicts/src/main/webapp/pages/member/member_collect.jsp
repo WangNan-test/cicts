@@ -58,7 +58,7 @@
        <div class="cmain mb_back"> 
         <div class="zbk_top spalid"> 
          <span>您当前的位置：</span> 
-         <span id="ctl00_content_website_SiteMapPath1"><a href="#ctl00_content_website_SiteMapPath1_SkipLink"></a><span> <a target="_blank" href="/pages/index.jsp">闲置商品系统</a> </span><span> <em>&gt;</em> </span><span> <a target="_blank" href="/pages/member/member_index.jsp">个人中心</a> </span><span> <em>&gt;</em> </span><span> <span>我的收藏</span> </span><a id="ctl00_content_website_SiteMapPath1_SkipLink"></a></span>
+         <span id="ctl00_content_website_SiteMapPath1"><a href="#ctl00_content_website_SiteMapPath1_SkipLink"></a><span> <a target="_blank" href="/pages/index.jsp">电子商城项目</a> </span><span> <em>&gt;</em> </span><span> <a target="_blank" href="/pages/member/member_index.jsp">个人中心</a> </span><span> <em>&gt;</em> </span><span> <span>我的收藏</span> </span><a id="ctl00_content_website_SiteMapPath1_SkipLink"></a></span>
         </div> 
         <div class="member_cort">
             <jsp:include page="/pages/plugins/member/member_menu.jsp"/>

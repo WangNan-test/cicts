@@ -7,7 +7,7 @@
 <head>
 	<jsp:include page="/pages/plugins/include_basepath.jsp"/>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>电子商城项目管理中心</title>
 <link rel="stylesheet" type="text/css" href="/statics/plugs/easyui/themes/black/easyui.css">
 <link rel="stylesheet" type="text/css" href="/statics/plugs/easyui/themes/icon.css">
 <script type="text/javascript" src="/statics/plugs/easyui/jquery.min.js"></script>
@@ -168,7 +168,7 @@
     <div data-options="region:'north'" style="height:50px;">
           <div class="div-header">
 		    <!-- 左侧标题 -->
-		    <div class="header-title">校园闲置商品交易系统</div>
+		    <div class="header-title">电子商城项目</div>
 		    <!-- 右侧菜单 -->
 		    <div class="header-right">
 		      <a href="javaScript:void(0)">欢迎您 ${user.uname}</a>

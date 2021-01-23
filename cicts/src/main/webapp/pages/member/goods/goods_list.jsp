@@ -67,7 +67,7 @@
 									<c:forEach items="${allGoods}" var="goods">
 									<tr>
 										<td class="text-center"><input type="checkbox" id="gid" value="${goods.gid}"></td>
-										<td class="text-center"><img src="upload/${goods.gimg}" style="width: 50px;"></td>
+										<td class="text-center"><img src="/upload/${goods.gimg}" style="width: 50px;"></td>
 										<td class="text-center">${goods.gname}</td>
 										<td class="text-center">${goods.price}</td>
 										<td class="text-center">${goods.type.tname}</td>

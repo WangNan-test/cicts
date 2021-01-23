@@ -52,9 +52,9 @@ em,i{font-style:normal}
 .kz_td{width:110px}
 .gm_td{width:160px;font-family:"Arial";}
 
-.cp_tr td{background:#fff9f8;padding:8px 0;color:#666;margin-bottom:10px}
+.cp_tr td{background:#f1fdfe;padding:8px 0;color:#666;margin-bottom:10px}
 .cp_tr .sp_td{padding-left:8px;width:206px}
-.cp_tr .gm_td{color:#ff4c4c;font-weight:bold}
+.cp_tr .gm_td{color:#f1fdfe;font-weight:bold}
 .close_td{width:36px;position:relative}
 .sicon{background:url(../images/small_tb.png) no-repeat;}
 .s_close{display:inline-block;position:absolute;width:20px;height:22px;background-position:0 -87px;right:12px;top:12px;cursor:pointer}

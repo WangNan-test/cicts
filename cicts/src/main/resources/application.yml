@@ -1,5 +1,5 @@
-server: #开发期间使用，打包后不需要
-  port: 9999
+#server: #开发期间使用，打包后不需要
+#  port: 9999
 
 spring:
   mvc:

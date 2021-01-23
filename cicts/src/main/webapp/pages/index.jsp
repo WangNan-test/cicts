@@ -39,10 +39,10 @@
                 <!--tab选项卡ul end-->
                 <!--tab选项卡下的内容-->
                 <ul class="all_tab">
-                    <li style="display: none;">
+                    <li style=" display: list-item;">
                         <!--tab选项卡下的左边内容-->
                         <div class="tab_left fl">
-                            <a href="index.html/dr_series/12_22.html"> <img width="504" height="314" alt="毕业季系列" src="/statics/images/fimg6.jpg" /> </a>
+                            <a href="http://www.gaoxinedu.com/"> <img width="504" height="314" alt="毕业季系列" src="/statics/images/gx_13.jpg" /> </a>
                         </div>
                         <!--tab选项卡下的左边内容 end-->
                         <!--tab选项卡下的右边内容-->
@@ -52,13 +52,10 @@
                             <p> 曾经抱怨，曾经遗憾，如今只剩满腔留恋</p>
                             <div class="to_more">
                                 <div class="bt2">
-                                    <a target="_blank" href="index.html/dr_series/12_22.html">了解更多</a>
+                                    <a target="_blank" href="http://www.gaoxinedu.com/">了解更多</a>
                                 </div>
                             </div>
-                            <!--更多选择-->
-                            <div class="more-ul">
-                                <p> <a target="_blank" href="/dr_series/12_22.html">学习用品</a> <a target="_blank" href="dr_phonics">生活用品</a> <a target="_blank" href="/j_series/22_12.html">美妆用品</a> </p>
-                            </div>
+
                         </div>
                         <!--tab选项卡下的右边内容  end--> </li>
                     <li style="display: none;">
@@ -70,7 +67,7 @@
                         <!--tab选项卡下的右边内容-->
                         <div class="tab_right fr">
                             <h3> 春新荡漾</h3>
-                            <p> 美鞋约惠，青春无敌</p>
+                            <p> 生活约惠，青春无敌</p>
                             <p> 青春正绽放</p>
                             <div class="to_more">
                                 <div class="bt2">
@@ -79,20 +76,20 @@
                             </div>
                         </div>
                         <!--tab选项卡下的右边内容  end--> </li>
-                    <li style="display: none;">
+                    <li style="display: list-item;">
                         <!--tab选项卡下的左边内容-->
                         <div class="tab_left fl">
-                            <a href="/dr_series/11_20.html"> <img width="504" height="314" alt="人间暖心系列" src="/statics/images/ss.jpg" /> </a>
+                            <a href="http://localhost:9999/page/gid?gid=109"> <img width="504" height="314" alt="人间暖心系列" src="/statics/images/ss1.jpg" /> </a>
                         </div>
                         <!--tab选项卡下的左边内容 end-->
                         <!--tab选项卡下的右边内容-->
                         <div class="tab_right fr">
-                            <h3> 人间暖心系列</h3>
+                            <h3> 大爱人间系列</h3>
                             <p> 没有人天生是英雄，只是因为有人需要 </p>
                             <p> 待胜此疫，山河无恙，人间可安</p>
                             <div class="to_more">
                                 <div class="bt2">
-                                    <a target="_blank" href="/dr_series/11_20.html">了解更多</a>
+                                    <a target="_blank" href="http://localhost:9999/page/gid?gid=109">了解更多</a>
                                 </div>
                             </div>
                             <!--更多选择-->
@@ -101,29 +98,8 @@
 
                         <!--tab选项卡下的左边内容 end-->
 
-                        <!--tab选项卡下的右边内容  end--> </li>
-                    <li style="opacity: 0.529435; display: list-item;">
-                        <!--tab选项卡下的左边内容-->
-                        <div class="tab_left fl">
-                            <a href="/dr_series/15_18.html"> <img width="504" height="314" alt="I Swear系列" src="/statics/images/fimg4.jpg" /> </a>
-                        </div>
-                        <!--tab选项卡下的左边内容 end-->
-                        <!--tab选项卡下的右边内容-->
-                        <div class="tab_right fr">
-                            <h3> I Swear系列</h3>
-                            <p> 不论顺境逆境、贫穷富贵、健康疾病</p>
-                            <p> 将我们的誓言印刻在永恒的钻石上，散发最闪耀的光芒</p>
-                            <div class="to_more">
-                                <div class="bt2">
-                                    <a target="_blank" href="/dr_series/15_18.html">了解更多</a>
-                                </div>
-                            </div>
-                            <!--更多选择-->
-                            <div class="more-ul">
-                                <p> <a target="_blank" href="/dr_series/15_28.html">求婚钻戒</a> <a target="_blank" href="dr_phonics"> 结婚对戒</a> <a target="_blank" href="/j_series/28_15.html">饰品</a> </p>
-                            </div>
-                        </div>
-                        <!--tab选项卡下的右边内容  end--> </li>
+
+
                 </ul>
                 <!--tab选项卡下的内容  end-->
                 <!--推荐款式-->
@@ -157,7 +133,7 @@
                                         <!--透明块里的文字end-->
                                     </div>
                                     <!--提示文字end--> </li>
-                                <li style="display: none;"><a target="_blank" href="https://2.taobao.com/"> <img width="280px" height="180px" alt="咸鱼，让你的闲置游起来" src="/statics/images/timg.jpg" /> </a>
+                                <li style="display: none;"><a target="_blank" href="https://www.jd.com/?cu=true&utm_source=baidu-search&utm_medium=cpc&utm_campaign=t_262767352_baidusearch&utm_term=53915520774_0_9d29c1666a754e3298719bb6c98c5954"> <img width="280px" height="180px" alt="京东，多快好省" src="/statics/images/jd.jpg" /> </a>
                                     <!--提示文字-->
                                     <div class="bnhide">
                                         <!--透明块-->
@@ -166,7 +142,7 @@
                                         <!--透明块end-->
                                         <!--透明块里的文字-->
                                         <div class="ban_word">
-                                            咸鱼，让你的闲置游起来
+                                            京东，多快好省
                                         </div>
                                         <!--透明块里的文字end-->
                                     </div>
@@ -198,7 +174,7 @@
                         <!--右边列表-->
                         <ul class="bkfirst_ul">
                             <li class="ts_list"> <h3> <a target="_blank" href="http://www.gaoxinedu.com/"> 走进高新，走进新时代</a></h3> <p> 西安科技大学高新学院是经教育部批准，由西安科技大学主办的全日制普通本科独立学院...[<a href="http://www.gaoxinedu.com/about-us.html">详情</a>]</p> </li>
-                            <li class=""> <h3> <a target="_blank" href="https://2.taobao.com/"> 咸鱼，让你的闲置游起来</a></h3> <p> 超多二手商品，物美价廉...[<a href="https://2.taobao.com/">详情</a>]</p> </li>
+                            <li class=""> <h3> <a target="_blank" href="https://www.jd.com/?cu=true&utm_source=baidu-search&utm_medium=cpc&utm_campaign=t_262767352_baidusearch&utm_term=53915520774_0_9d29c1666a754e3298719bb6c98c5954"> 京东，多快好省</a></h3> <p> 京东商城...[<a href="https://2.taobao.com/">详情</a>]</p> </li>
                             <li class=""> <h3> <a target="_blank" href="https://www.taobao.com/?spm=a2e15.8261149.1581860521.1.58b429b4s209GW"> 淘宝，淘你所爱</a></h3> <p> 淘宝网（taobao.com）是中国深受欢迎的网购零售平台，目前拥有近5亿的注册用户数，每天有超过6000万的固定访客...[<a href="https://www.taobao.com/tbhome/page/about/home?spm=a21bo.2017.1997523009.30.1f6e11d9TevuJl">详情</a>]</p> </li>
                         </ul>
                         <!--右边列表end-->
@@ -208,14 +184,14 @@
                     <div class="bkbook_left-sec">
                         <!--左边ul 求婚相关-->
                         <ul class="bkbook_left-secul">
-                            <li><a class="fl" target="_blank" href="https://pei.taobao.com/?spm=a21bo.2017.201867-main.6.1f6e11d9TevuJl"> 夏季如何俏皮穿搭...</a> <span class="fr"> 2020/3/9</span> </li>
-                                <li><a class="fl" target="_blank" href="https://chaoshi.tmall.com/?spm=a21bo.2017.201859.3.1f6e11d9TevuJl"> 探索饱腹减脂的奥秘...</a> <span class="fr"> 2020/3/9</span> </li>
+                            <li><a class="fl" target="_blank" href="https://pei.taobao.com/?spm=a21bo.2017.201867-main.6.1f6e11d9TevuJl"> 夏季如何俏皮穿搭...</a> <span class="fr"> 2021/1/9</span> </li>
+                                <li><a class="fl" target="_blank" href="https://chaoshi.tmall.com/?spm=a21bo.2017.201859.3.1f6e11d9TevuJl"> 探索饱腹减脂的奥秘...</a> <span class="fr"> 2021/1/9</span> </li>
                         </ul>
                         <!--左边ul end-->
                         <!--右边ul 求婚相关-->
                         <ul class="bkbook_left-secul bkbook_left-spcul">
-                            <li><a class="fl" target="_blank" href="https://s.taobao.com/search?spm=a21bo.2017.201867-main.28.1f6e11d9TevuJl&q=%E5%9B%AD%E8%89%BA&imgfile=&commend=all&ssid=s5-e&search_type=item&sourceId=tb.index&ie=utf8&initiative_id=tbindexz_20170419"> 一抹璀璨，焕现亮光</a> <span class="fr"> 2020/3/9</span> </li>
-                            <li><a class="fl" target="_blank" href="https://s.taobao.com/search?spm=a21bo.2017.201867-main.28.1f6e11d9TevuJl&q=%E5%9B%AD%E8%89%BA&imgfile=&commend=all&ssid=s5-e&search_type=item&sourceId=tb.index&ie=utf8&initiative_id=tbindexz_20170419"> 每日穿搭之显腿长的小心机</a> <span class="fr"> 2020/3/9</span> </li>
+                            <li><a class="fl" target="_blank" href="https://s.taobao.com/search?spm=a21bo.2017.201867-main.28.1f6e11d9TevuJl&q=%E5%9B%AD%E8%89%BA&imgfile=&commend=all&ssid=s5-e&search_type=item&sourceId=tb.index&ie=utf8&initiative_id=tbindexz_20170419"> 一抹璀璨，焕现亮光</a> <span class="fr"> 2021/1/9</span> </li>
+                            <li><a class="fl" target="_blank" href="https://s.taobao.com/search?spm=a21bo.2017.201867-main.28.1f6e11d9TevuJl&q=%E5%9B%AD%E8%89%BA&imgfile=&commend=all&ssid=s5-e&search_type=item&sourceId=tb.index&ie=utf8&initiative_id=tbindexz_20170419"> 每日穿搭之显腿长的小心机</a> <span class="fr"> 2021/1/9</span> </li>
                         </ul>
                         <!--右边ul end-->
                     </div>
@@ -228,12 +204,12 @@
                     <div class="bkbook_right-allul">
                         <!--左边图片-->
                         <div class="bkbook_right-fimg fl">
-                            <a target="_blank" href="https://www.taobao.com/market/nvzhuang/index.php?spm=a21bo.7723600.8224.1.63795ec9pusac3"> <img width="120" height="72" alt="夏季换新" src="/statics/images/yf3.jpg" /> </a>
+                            <a target="_blank" href="https://www.taobao.com/market/nvzhuang/index.php?spm=a21bo.7723600.8224.1.63795ec9pusac3"> <img width="120" height="72" alt="夏季换新" src="/statics/images/yf2.jpg" /> </a>
                         </div>
                         <!--左边图片end-->
                         <!--右边ul-->
                         <ul class="bkbook_left-secul bkbook_right-spcul">
-                            <li><a href="https://www.taobao.com/markets/qiangxin/nvzhuang?spm=a21bo.7723600.8224.6.63795ec9pusac3"> 夏季焕新</a> </li>
+                            <li><a href="https://www.taobao.com/markets/qiangxin/nvzhuang?spm=a21bo.7723600.8224.6.63795ec9pusac3"> 春季焕新</a> </li>
                             <li><a href="https://www.taobao.com/market/nvzhuang/dress.php?spm=a21bo.7723600.8224.8.63795ec9pusac3"> 时尚潮服</a> </li>
                             <li><a href="https://www.taobao.com/market/nvxie/citiao/index.php?spm=a21bo.7723600.8555.1.63795ec9pusac3"> 鞋靴专柜</a> </li>
                         </ul>

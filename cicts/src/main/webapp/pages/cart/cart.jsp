@@ -21,7 +21,7 @@
      <div class="shop_top">
       <div class="shopt_left fl">
        <a title="Darry Ring" href="/pages/index.jsp"> <img width="186" height="42" src="/statics/images/logo-white.png" /> </a>
-       <span>校园闲置商品交易系统</span>
+       <span>电子商城项目</span>
       </div>
       <% User user =(User) session.getAttribute("user"); %>
       <div class="shopt_right fr">
